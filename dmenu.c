@@ -42,16 +42,16 @@ struct {
 
 const char *progname;
 
-static uint32_t color_bg = 0x222222ff;
-static uint32_t color_fg = 0xbbbbbbff;
-static uint32_t color_input_bg = 0x222222ff;
-static uint32_t color_input_fg = 0xbbbbbbff;
-static uint32_t color_prompt_bg = 0x005577ff;
-static uint32_t color_prompt_fg = 0xeeeeeeff;
-static uint32_t color_selected_bg = 0x005577ff;
-static uint32_t color_selected_fg = 0xeeeeeeff;
+static uint32_t color_bg = 0x001020ff;
+static uint32_t color_fg = 0x607080ff;
+static uint32_t color_input_bg = 0x001020ff;
+static uint32_t color_input_fg = 0x607080ff;
+static uint32_t color_prompt_bg = 0x001020ff;
+static uint32_t color_prompt_fg = 0x607080ff;
+static uint32_t color_selected_bg = 0x704020ff;
+static uint32_t color_selected_fg = 0x90a0b0ff;
 
-static int32_t panel_height = 20;
+static int32_t panel_height = 12;
 
 static void appenditem(Item *item, Item **list, Item **last);
 static char *fstrstr(const char *s, const char *sub);
@@ -82,7 +82,7 @@ static Item *items = NULL;
 static Item *matches, *sel;
 static Item *prev, *curr, *next;
 static Item *leftmost, *rightmost;
-static char *font = "Mono";
+static char *font = "Gohu GohuFont 8";
 
 static int (*fstrncmp)(const char *, const char *, size_t) = strncmp;
 
